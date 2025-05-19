@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visualizador de Modelos 3D</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f4f6;
+    }
+    model-viewer {
+      width: 600px;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="models/Casa1.glb"
+    alt="Modelo 3D Casa1"
+    auto-rotate
+    camera-controls
+    ar
+    shadow-intensity="1"
+    environment-image="neutral"
+  ></model-viewer>
+</body>
+</html>
